@@ -1,0 +1,269 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Saulnier Stain Library</title>
+<meta name="description" content="Browse every stain sample Saulnier Floors photographed on 14 October 2026. Search by color, filter by collection and species, tap any swatch for a full size view.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://octocog.github.io/saulnier-stain-library/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saulnier Stain Library">
+<meta property="og:description" content="319 stain samples, searchable by color, collection and species.">
+<meta property="og:url" content="https://octocog.github.io/saulnier-stain-library/">
+<meta property="og:image" content="https://octocog.github.io/saulnier-stain-library/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Saulnier Stain Library">
+<meta name="twitter:description" content="319 stain samples, searchable by color, collection and species.">
+<meta name="twitter:image" content="https://octocog.github.io/saulnier-stain-library/og.jpg">
+<meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#17150f" media="(prefers-color-scheme:dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%236b4a2f'/><path d='M3 4h10M3 8h10M3 12h10' stroke='%23d9b88f' stroke-width='1.4'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage",
+ "name":"Saulnier Stain Library",
+ "description":"Photographic reference of 319 wood flooring stain samples.",
+ "url":"https://octocog.github.io/saulnier-stain-library/",
+ "inLanguage":"en-US",
+ "mainEntity":{"@type":"ItemList","numberOfItems":319,"name":"Stain samples"}}
+</script>
+<style>
+:root{
+  --paper:#faf8f5; --card:#fff; --ink:#241f1a; --muted:#857c71; --faint:#b0a89d;
+  --rule:#e4ded5; --walnut:#6b4a2f; --flag:#a8582c; --tile:#efeae3;
+  --shadow:0 2px 10px -6px rgba(36,31,26,.4);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#17150f; --card:#201d17; --ink:#ece7df; --muted:#9b9387; --faint:#6e675d;
+    --rule:#332e26; --walnut:#c89a6e; --flag:#e08b5d; --tile:#2a251d;
+    --shadow:0 2px 10px -6px #000;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#17150f; --card:#201d17; --ink:#ece7df; --muted:#9b9387; --faint:#6e675d;
+  --rule:#332e26; --walnut:#c89a6e; --flag:#e08b5d; --tile:#2a251d;
+  --shadow:0 2px 10px -6px #000;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:400 15px/1.5 "Instrument Sans",system-ui,-apple-system,sans-serif;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+img{display:block;max-width:100%}
+
+header{padding:24px 16px 15px;border-bottom:1px solid var(--rule)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.65rem;
+   margin:0 0 4px;letter-spacing:-.015em;text-wrap:balance}
+.sub{margin:0;color:var(--muted);font-size:.8125rem;max-width:60ch}
+
+.controls{position:sticky;top:0;z-index:20;background:var(--paper);
+  border-bottom:1px solid var(--rule);padding:10px 0 9px}
+.search{padding:0 16px 9px}
+.search input{width:100%;padding:11px 13px;border:1px solid var(--rule);border-radius:9px;
+  font:400 16px "Instrument Sans",system-ui,sans-serif;background:var(--card);color:var(--ink)}
+.search input::placeholder{color:var(--faint)}
+.search input:focus{outline:2px solid var(--walnut);outline-offset:-1px;border-color:transparent}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:0 16px 2px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chips + .chips{margin-top:7px}
+.chip{flex:0 0 auto;border:1px solid var(--rule);background:var(--card);color:var(--muted);
+  padding:6px 12px;border-radius:99px;font-size:.8125rem;font-weight:500;
+  cursor:pointer;white-space:nowrap;font-family:inherit}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.flagchip{color:var(--flag);border-color:var(--flag)}
+.chip.flagchip[aria-pressed="true"]{background:var(--flag);border-color:var(--flag);color:#fff}
+.chip .ct{opacity:.55;margin-left:5px;font-variant-numeric:tabular-nums}
+
+.count{padding:12px 16px 4px;font-size:.75rem;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--faint);font-variant-numeric:tabular-nums}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;padding:8px 16px 36px}
+@media (min-width:560px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:820px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1180px;margin:0 auto}}
+@media (min-width:1100px){.grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+.tile{background:var(--card);border:1px solid var(--rule);border-radius:11px;
+  overflow:hidden;cursor:pointer;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;text-align:left;padding:0;
+  font:inherit;color:inherit}
+.tile .ph{aspect-ratio:1;overflow:hidden;background:var(--tile)}
+.tile .ph img{width:100%;height:100%;object-fit:cover}
+.tile .meta{padding:8px 10px 10px}
+.tile .nm{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:.9375rem;
+  line-height:1.2;letter-spacing:-.01em}
+.tile .sub2{margin-top:3px;font-size:.6875rem;color:var(--muted);line-height:1.35}
+.tile .flag{display:inline-block;margin-top:5px;font-size:.625rem;font-weight:600;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--flag)}
+.empty{padding:50px 16px;text-align:center;color:var(--muted)}
+
+footer{border-top:1px solid var(--rule);padding:22px 16px 34px;color:var(--muted);
+  font-size:.75rem;line-height:1.6}
+footer p{margin:0 0 7px;max-width:62ch}
+footer a{color:var(--walnut)}
+
+dialog{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;
+  width:100%;height:100%;margin:0}
+dialog::backdrop{background:rgba(24,20,16,.94)}
+.lb{height:100%;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:14px;padding:18px}
+.lb img{max-width:min(100%,520px);max-height:62vh;border-radius:8px;object-fit:contain;
+  background:var(--tile)}
+.lb .info{text-align:center;color:#f5f1ea}
+.lb .info b{display:block;font-family:Fraunces,Georgia,serif;font-size:1.4rem;font-weight:700}
+.lb .info span{display:block;font-size:.8125rem;opacity:.72;margin-top:4px}
+.lb .info em{display:block;font-size:.6875rem;font-style:normal;font-weight:600;
+  letter-spacing:.05em;text-transform:uppercase;color:#e9a277;margin-top:6px}
+.lb .info code{display:block;font-size:.6875rem;opacity:.5;margin-top:7px;
+  font-family:ui-monospace,monospace;word-break:break-all}
+.lb .acts{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.lb .acts a,.lb .acts button{background:#fff;color:var(--ink);border:0;border-radius:99px;
+  padding:10px 22px;font:600 .875rem "Instrument Sans",sans-serif;cursor:pointer;
+  text-decoration:none;display:inline-block}
+.lb .acts a{background:transparent;color:#f5f1ea;border:1px solid rgba(245,241,234,.45)}
+:focus-visible{outline:2px solid var(--walnut);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header>
+  <h1>Stain Library</h1>
+  <p class="sub">Saulnier Floors. <span id="hn"></span> samples photographed 14 October 2026. Tap any swatch for a full size view and a download.</p>
+</header>
+
+<div class="controls">
+  <div class="search">
+    <input id="q" type="search" placeholder="Search a color, Willard, Tahoe, Gray Horse" autocomplete="off" aria-label="Search samples">
+  </div>
+  <div class="chips" id="cols" role="group" aria-label="Filter by collection"></div>
+  <div class="chips" id="woods" role="group" aria-label="Filter by species"></div>
+  <div class="chips" id="flags" role="group" aria-label="Filter by record status"></div>
+</div>
+
+<p class="count" id="count"></p>
+<div class="grid" id="grid"></div>
+
+<footer>
+  <p id="pending"></p>
+  <p>Swatches are cropped to pure grain from the original camera files at 800 by 800 pixels, supplied as JPEG and WebP.</p>
+  <p>Designed and maintained by <a href="https://octocog.com">OctoCog Marketing &amp; Design</a>.</p>
+</footer>
+
+<dialog id="lb">
+  <div class="lb">
+    <img id="lbimg" alt="">
+    <div class="info">
+      <b id="lbname"></b>
+      <span id="lbsub"></span>
+      <em id="lbflag"></em>
+      <code id="lbfile"></code>
+    </div>
+    <div class="acts">
+      <button type="button" id="lbclose">Close</button>
+      <a id="lbdl" download>Download JPEG</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const DATA = [{"c":"Coastal","w":"White Oak","n":"Willard","f":"Charney0033.CR3","q":"","b":"Coastal_White-Oak_Willard_0033"},{"c":"Coastal","w":"White Oak","n":"Bow","f":"Charney0035.CR3","q":"","b":"Coastal_White-Oak_Bow_0035"},{"c":"Coastal","w":"White Oak","n":"Meadowbrook","f":"Charney0038.CR3","q":"","b":"Coastal_White-Oak_Meadowbrook_0038"},{"c":"Coastal","w":"White Oak","n":"Ayr Brown","f":"Charney0039.CR3","q":"","b":"Coastal_White-Oak_Ayr-Brown_0039"},{"c":"Coastal","w":"White Oak","n":"Nuro","f":"Charney0042.CR3","q":"","b":"Coastal_White-Oak_Nuro_0042"},{"c":"Coastal","w":"White Oak","n":"Corden","f":"Charney0046.CR3","q":"","b":"Coastal_White-Oak_Corden_0046"},{"c":"Coastal","w":"White Oak","n":"Redmond","f":"Charney0047.CR3","q":"","b":"Coastal_White-Oak_Redmond_0047"},{"c":"Coastal","w":"White Oak","n":"Mendenhall","f":"Charney0049.CR3","q":"","b":"Coastal_White-Oak_Mendenhall_0049"},{"c":"Coastal","w":"White Oak","n":"Seri","f":"Charney0050.CR3","q":"","b":"Coastal_White-Oak_Seri_0050"},{"c":"Coastal","w":"White Oak","n":"Walker","f":"Charney0051.CR3","q":"","b":"Coastal_White-Oak_Walker_0051"},{"c":"Coastal","w":"White Oak","n":"Chatham","f":"Charney0052.CR3","q":"","b":"Coastal_White-Oak_Chatham_0052"},{"c":"Coastal","w":"White Oak","n":"Claire","f":"Charney0053.CR3","q":"","b":"Coastal_White-Oak_Claire_0053"},{"c":"Coastal","w":"White Oak","n":"Grey Fox","f":"Charney0054.CR3","q":"","b":"Coastal_White-Oak_Grey-Fox_0054"},{"c":"Coastal","w":"White Oak","n":"Wayland","f":"Charney0055.CR3","q":"","b":"Coastal_White-Oak_Wayland_0055"},{"c":"Coastal","w":"White Oak","n":"Wayland","f":"Charney0056.CR3","q":"","b":"Coastal_White-Oak_Wayland_0056"},{"c":"Coastal","w":"White Oak","n":"Jordan","f":"Charney0057.CR3","q":"","b":"Coastal_White-Oak_Jordan_0057"},{"c":"Coastal","w":"White Oak","n":"Jordan","f":"Charney0058.CR3","q":"","b":"Coastal_White-Oak_Jordan_0058"},{"c":"Coastal","w":"White Oak","n":"Java","f":"Charney0059.CR3","q":"","b":"Coastal_White-Oak_Java_0059"},{"c":"Coastal","w":"White Oak","n":"Sablewood","f":"Charney0060.CR3","q":"","b":"Coastal_White-Oak_Sablewood_0060"},{"c":"Coastal","w":"White Oak","n":"Tahoe","f":"Charney0061.CR3","q":"","b":"Coastal_White-Oak_Tahoe_0061"},{"c":"Coastal","w":"White Oak","n":"Tahoe","f":"Charney0062.CR3","q":"","b":"Coastal_White-Oak_Tahoe_0062"},{"c":"Coastal","w":"White Oak","n":"Gold Coast","f":"Charney0063.CR3","q":"","b":"Coastal_White-Oak_Gold-Coast_0063"},{"c":"Coastal","w":"White Oak","n":"Nellie","f":"Charney0064.CR3","q":"","b":"Coastal_White-Oak_Nellie_0064"},{"c":"Coastal","w":"White Oak","n":"Gray Horse","f":"Charney0065.CR3","q":"","b":"Coastal_White-Oak_Gray-Horse_0065"},{"c":"Coastal","w":"White Oak","n":"Gray Horse","f":"Charney0066.CR3","q":"","b":"Coastal_White-Oak_Gray-Horse_0066"},{"c":"Coastal","w":"White Oak","n":"Northwood","f":"Charney0067.CR3","q":"","b":"Coastal_White-Oak_Northwood_0067"},{"c":"Coastal","w":"White Oak","n":"Lovell","f":"Charney0068.CR3","q":"","b":"Coastal_White-Oak_Lovell_0068"},{"c":"Coastal","w":"White Oak","n":"Sunapee","f":"Charney0069.CR3","q":"","b":"Coastal_White-Oak_Sunapee_0069"},{"c":"Coastal","w":"White Oak","n":"Sutton","f":"Charney0070.CR3","q":"","b":"Coastal_White-Oak_Sutton_0070"},{"c":"Coastal","w":"White Oak","n":"Morey","f":"Charney0073.CR3","q":"","b":"Coastal_White-Oak_Morey_0073"},{"c":"Coastal","w":"White Oak","n":"Greyport","f":"Charney0074.CR3","q":"","b":"Coastal_White-Oak_Greyport_0074"},{"c":"Coastal","w":"White Oak","n":"Fairlee","f":"Charney0075.CR3","q":"","b":"Coastal_White-Oak_Fairlee_0075"},{"c":"Coastal","w":"White Oak","n":"White Falls","f":"Charney0076.CR3","q":"","b":"Coastal_White-Oak_White-Falls_0076"},{"c":"Coastal","w":"White Oak","n":"Echo","f":"Charney0077.CR3","q":"","b":"Coastal_White-Oak_Echo_0077"},{"c":"Coastal","w":"White Oak","n":"Eden","f":"Charney0078.CR3","q":"","b":"Coastal_White-Oak_Eden_0078"},{"c":"Coastal","w":"White Oak","n":"Antioch","f":"Charney0079.CR3","q":"","b":"Coastal_White-Oak_Antioch_0079"},{"c":"Coastal","w":"White Oak","n":"Antioch","f":"Charney0080.CR3","q":"","b":"Coastal_White-Oak_Antioch_0080"},{"c":"Coastal","w":"White Oak","n":"Franco","f":"Charney0082.CR3","q":"","b":"Coastal_White-Oak_Franco_0082"},{"c":"Coastal","w":"White Oak","n":"Franco","f":"Charney0083.CR3","q":"","b":"Coastal_White-Oak_Franco_0083"},{"c":"Coastal","w":"White Oak","n":"Grey Domaine","f":"Charney0084.CR3","q":"","b":"Coastal_White-Oak_Grey-Domaine_0084"},{"c":"Coastal","w":"White Oak","n":"Spear","f":"Charney0085.CR3","q":"","b":"Coastal_White-Oak_Spear_0085"},{"c":"Coastal","w":"White Oak","n":"Spear","f":"Charney0086.CR3","q":"","b":"Coastal_White-Oak_Spear_0086"},{"c":"Coastal","w":"White Oak","n":"Sandy Dock","f":"Charney0087.CR3","q":"","b":"Coastal_White-Oak_Sandy-Dock_0087"},{"c":"Coastal","w":"White Oak","n":"Sandy Dock","f":"Charney0088.CR3","q":"","b":"Coastal_White-Oak_Sandy-Dock_0088"},{"c":"Coastal","w":"White Oak","n":"Nature","f":"Charney0089.CR3","q":"","b":"Coastal_White-Oak_Nature_0089"},{"c":"Coastal","w":"White Oak","n":"Nature","f":"Charney0090.CR3","q":"","b":"Coastal_White-Oak_Nature_0090"},{"c":"Coastal","w":"White Oak","n":"East Bay","f":"Charney0091.CR3","q":"","b":"Coastal_White-Oak_East-Bay_0091"},{"c":"Coastal","w":"White Oak","n":"East Bay","f":"Charney0092.CR3","q":"","b":"Coastal_White-Oak_East-Bay_0092"},{"c":"Coastal","w":"White Oak","n":"Smitten","f":"Charney0093.CR3","q":"","b":"Coastal_White-Oak_Smitten_0093"},{"c":"Coastal","w":"White Oak","n":"Dalton","f":"Charney0094.CR3","q":"","b":"Coastal_White-Oak_Dalton_0094"},{"c":"Coastal","w":"White Oak","n":"Dalton","f":"Charney0095.CR3","q":"","b":"Coastal_White-Oak_Dalton_0095"},{"c":"Coastal","w":"White Oak","n":"Dahlia","f":"Charney0096.CR3","q":"","b":"Coastal_White-Oak_Dahlia_0096"},{"c":"Coastal","w":"White Oak","n":"Dahlia","f":"Charney0097.CR3","q":"","b":"Coastal_White-Oak_Dahlia_0097"},{"c":"Coastal","w":"White Oak","n":"Mohave","f":"Charney0099.CR3","q":"","b":"Coastal_White-Oak_Mohave_0099"},{"c":"Coastal","w":"White Oak","n":"Stonewall","f":"Charney0100.CR3","q":"","b":"Coastal_White-Oak_Stonewall_0100"},{"c":"Coastal","w":"White Oak","n":"Stonewall","f":"Charney0101.CR3","q":"","b":"Coastal_White-Oak_Stonewall_0101"},{"c":"Coastal","w":"White Oak","n":"Palomino","f":"Charney0102.CR3","q":"","b":"Coastal_White-Oak_Palomino_0102"},{"c":"Coastal","w":"White Oak","n":"Dalton","f":"Charney0104.CR3","q":"","b":"Coastal_White-Oak_Dalton_0104"},{"c":"Coastal","w":"White Oak","n":"Dalton","f":"Charney0105.CR3","q":"","b":"Coastal_White-Oak_Dalton_0105"},{"c":"Coastal","w":"White Oak","n":"Melanie","f":"Charney0106.CR3","q":"","b":"Coastal_White-Oak_Melanie_0106"},{"c":"Coastal","w":"White Oak","n":"Melanie","f":"Charney0107.CR3","q":"","b":"Coastal_White-Oak_Melanie_0107"},{"c":"Coastal","w":"White Oak","n":"Jayce","f":"Charney0108.CR3","q":"","b":"Coastal_White-Oak_Jayce_0108"},{"c":"Coastal","w":"White Oak","n":"Jayce","f":"Charney0109.CR3","q":"","b":"Coastal_White-Oak_Jayce_0109"},{"c":"Coastal","w":"White Oak","n":"Helena","f":"Charney0110.CR3","q":"","b":"Coastal_White-Oak_Helena_0110"},{"c":"Coastal","w":"White Oak","n":"Helena","f":"Charney0111.CR3","q":"","b":"Coastal_White-Oak_Helena_0111"},{"c":"Coastal","w":"White Oak","n":"Poppy","f":"Charney0112.CR3","q":"","b":"Coastal_White-Oak_Poppy_0112"},{"c":"Coastal","w":"White Oak","n":"Poppy","f":"Charney0113.CR3","q":"","b":"Coastal_White-Oak_Poppy_0113"},{"c":"Coastal","w":"White Oak","n":"Bliss","f":"Charney0117.CR3","q":"","b":"Coastal_White-Oak_Bliss_0117"},{"c":"Coastal","w":"White Oak","n":"Bliss","f":"Charney0118.CR3","q":"","b":"Coastal_White-Oak_Bliss_0118"},{"c":"Coastal","w":"White Oak","n":"Bliss","f":"Charney0119.CR3","q":"","b":"Coastal_White-Oak_Bliss_0119"},{"c":"Coastal","w":"White Oak","n":"Rosewick","f":"Charney0120.CR3","q":"","b":"Coastal_White-Oak_Rosewick_0120"},{"c":"Coastal","w":"White Oak","n":"Marigold","f":"Charney0121.CR3","q":"","b":"Coastal_White-Oak_Marigold_0121"},{"c":"Coastal","w":"White Oak","n":"Marigold","f":"Charney0122.CR3","q":"","b":"Coastal_White-Oak_Marigold_0122"},{"c":"Coastal","w":"White Oak","n":"Sprigg","f":"Charney0123.CR3","q":"","b":"Coastal_White-Oak_Sprigg_0123"},{"c":"Coastal","w":"White Oak","n":"Sprigg","f":"Charney0124.CR3","q":"","b":"Coastal_White-Oak_Sprigg_0124"},{"c":"Coastal","w":"White Oak","n":"Twinsburg","f":"Charney0125.CR3","q":"","b":"Coastal_White-Oak_Twinsburg_0125"},{"c":"Coastal","w":"White Oak","n":"Twinsburg","f":"Charney0126.CR3","q":"","b":"Coastal_White-Oak_Twinsburg_0126"},{"c":"Coastal","w":"White Oak","n":"St George","f":"Charney0127.CR3","q":"","b":"Coastal_White-Oak_St-George_0127"},{"c":"Coastal","w":"White Oak","n":"Anthem","f":"Charney0128.CR3","q":"","b":"Coastal_White-Oak_Anthem_0128"},{"c":"Coastal","w":"White Oak","n":"Anthem","f":"Charney0129.CR3","q":"","b":"Coastal_White-Oak_Anthem_0129"},{"c":"Coastal","w":"White Oak","n":"Java","f":"Charney0131.CR3","q":"","b":"Coastal_White-Oak_Java_0131"},{"c":"Coastal","w":"White Oak","n":"Java","f":"Charney0132.CR3","q":"","b":"Coastal_White-Oak_Java_0132"},{"c":"Coastal","w":"White Oak","n":"Thompson","f":"Charney0133.CR3","q":"","b":"Coastal_White-Oak_Thompson_0133"},{"c":"Coastal","w":"White Oak","n":"Thompson","f":"Charney0134.CR3","q":"","b":"Coastal_White-Oak_Thompson_0134"},{"c":"Coastal","w":"White Oak","n":"Union","f":"Charney0135.CR3","q":"","b":"Coastal_White-Oak_Union_0135"},{"c":"Coastal","w":"White Oak","n":"Union","f":"Charney0136.CR3","q":"","b":"Coastal_White-Oak_Union_0136"},{"c":"Coastal","w":"White Oak","n":"Wendale","f":"Charney0137.CR3","q":"","b":"Coastal_White-Oak_Wendale_0137"},{"c":"Coastal","w":"White Oak","n":"Wendale","f":"Charney0138.CR3","q":"","b":"Coastal_White-Oak_Wendale_0138"},{"c":"Coastal","w":"White Oak","n":"Alta Park","f":"Charney0139.CR3","q":"","b":"Coastal_White-Oak_Alta-Park_0139"},{"c":"Coastal","w":"White Oak","n":"Elinor","f":"Charney0140.CR3","q":"","b":"Coastal_White-Oak_Elinor_0140"},{"c":"Coastal","w":"White Oak","n":"Gunther","f":"Charney0141.CR3","q":"","b":"Coastal_White-Oak_Gunther_0141"},{"c":"Coastal","w":"White Oak","n":"Anchor Oak","f":"Charney0142.CR3","q":"","b":"Coastal_White-Oak_Anchor-Oak_0142"},{"c":"Coastal","w":"White Oak","n":"Dunmore","f":"Charney0143.CR3","q":"","b":"Coastal_White-Oak_Dunmore_0143"},{"c":"Coastal","w":"White Oak","n":"Morey","f":"Charney0144.CR3","q":"","b":"Coastal_White-Oak_Morey_0144"},{"c":"Coastal","w":"White Oak","n":"Dune Light","f":"Charney0145.CR3","q":"","b":"Coastal_White-Oak_Dune-Light_0145"},{"c":"Coastal","w":"White Oak","n":"Radcliffe","f":"Charney0146.CR3","q":"","b":"Coastal_White-Oak_Radcliffe_0146"},{"c":"Coastal","w":"White Oak","n":"Haven","f":"Charney0147.CR3","q":"","b":"Coastal_White-Oak_Haven_0147"},{"c":"Coastal","w":"White Oak","n":"Chester","f":"Charney0148.CR3","q":"","b":"Coastal_White-Oak_Chester_0148"},{"c":"Coastal","w":"White Oak","n":"Naturelle","f":"Charney0149.CR3","q":"","b":"Coastal_White-Oak_Naturelle_0149"},{"c":"Coastal","w":"White Oak","n":"Wells","f":"Charney0150.CR3","q":"","b":"Coastal_White-Oak_Wells_0150"},{"c":"Coastal","w":"White Oak","n":"Gold Coast","f":"Charney0151.CR3","q":"","b":"Coastal_White-Oak_Gold-Coast_0151"},{"c":"Coastal","w":"White Oak","n":"Golly","f":"Charney0152.CR3","q":"","b":"Coastal_White-Oak_Golly_0152"},{"c":"Coastal","w":"White Oak","n":"Port Pine","f":"Charney0153.CR3","q":"","b":"Coastal_White-Oak_Port-Pine_0153"},{"c":"Coastal","w":"White Oak","n":"Nugget","f":"Charney0154.CR3","q":"","b":"Coastal_White-Oak_Nugget_0154"},{"c":"Coastal","w":"White Oak","n":"Ossipee","f":"Charney0155.CR3","q":"","b":"Coastal_White-Oak_Ossipee_0155"},{"c":"Coastal","w":"White Oak","n":"Conway","f":"Charney0157.CR3","q":"","b":"Coastal_White-Oak_Conway_0157"},{"c":"Coastal","w":"White Oak","n":"Francis","f":"Charney0158.CR3","q":"ambiguous label","b":"Coastal_White-Oak_Francis_0158"},{"c":"Coastal","w":"White Oak","n":"St Catherine","f":"Charney0159.CR3","q":"","b":"Coastal_White-Oak_St-Catherine_0159"},{"c":"Coastal","w":"White Oak","n":"Province","f":"Charney0160.CR3","q":"","b":"Coastal_White-Oak_Province_0160"},{"c":"Harbor","w":"White Oak","n":"Johnson","f":"Charney0164.CR3","q":"","b":"Harbor_White-Oak_Johnson_0164"},{"c":"Harbor","w":"White Oak","n":"Texoma","f":"Charney0165.CR3","q":"","b":"Harbor_White-Oak_Texoma_0165"},{"c":"Harbor","w":"White Oak","n":"Texoma","f":"Charney0166.CR3","q":"","b":"Harbor_White-Oak_Texoma_0166"},{"c":"Harbor","w":"White Oak","n":"Torch","f":"Charney0167.CR3","q":"","b":"Harbor_White-Oak_Torch_0167"},{"c":"Harbor","w":"White Oak","n":"Pepin","f":"Charney0168.CR3","q":"","b":"Harbor_White-Oak_Pepin_0168"},{"c":"Harbor","w":"White Oak","n":"Pepin","f":"Charney0169.CR3","q":"","b":"Harbor_White-Oak_Pepin_0169"},{"c":"Harbor","w":"White Oak","n":"Rainy","f":"Charney0170.CR3","q":"ambiguous label","b":"Harbor_White-Oak_Rainy_0170"},{"c":"Harbor","w":"White Oak","n":"Paine","f":"Charney0171.CR3","q":"","b":"Harbor_White-Oak_Paine_0171"},{"c":"Harbor","w":"White Oak","n":"Ropes","f":"Charney0172.CR3","q":"","b":"Harbor_White-Oak_Ropes_0172"},{"c":"Harbor","w":"White Oak","n":"Cindy","f":"Charney0173.CR3","q":"","b":"Harbor_White-Oak_Cindy_0173"},{"c":"Harbor","w":"White Oak","n":"Cindy","f":"Charney0174.CR3","q":"","b":"Harbor_White-Oak_Cindy_0174"},{"c":"Harbor","w":"White Oak","n":"Judith","f":"Charney0175.CR3","q":"","b":"Harbor_White-Oak_Judith_0175"},{"c":"Harbor","w":"White Oak","n":"Judith","f":"Charney0176.CR3","q":"","b":"Harbor_White-Oak_Judith_0176"},{"c":"Harbor","w":"White Oak","n":"Rogers","f":"Charney0177.CR3","q":"","b":"Harbor_White-Oak_Rogers_0177"},{"c":"Harbor","w":"White Oak","n":"Blaze Brown","f":"Charney0178.CR3","q":"","b":"Harbor_White-Oak_Blaze-Brown_0178"},{"c":"Harbor","w":"White Oak","n":"Martingale Brown","f":"Charney0179.CR3","q":"","b":"Harbor_White-Oak_Martingale-Brown_0179"},{"c":"Harbor","w":"White Oak","n":"Bridle Brown","f":"Charney0180.CR3","q":"","b":"Harbor_White-Oak_Bridle-Brown_0180"},{"c":"Harbor","w":"White Oak","n":"Martingale Brown","f":"Charney0181.CR3","q":"","b":"Harbor_White-Oak_Martingale-Brown_0181"},{"c":"Harbor","w":"White Oak","n":"Pedigree Brown","f":"Charney0182.CR3","q":"","b":"Harbor_White-Oak_Pedigree-Brown_0182"},{"c":"Harbor","w":"White Oak","n":"Bronco Brown","f":"Charney0183.CR3","q":"","b":"Harbor_White-Oak_Bronco-Brown_0183"},{"c":"Harbor","w":"White Oak","n":"Billington","f":"Charney0184.CR3","q":"","b":"Harbor_White-Oak_Billington_0184"},{"c":"Harbor","w":"White Oak","n":"Boon","f":"Charney0185.CR3","q":"","b":"Harbor_White-Oak_Boon_0185"},{"c":"Harbor","w":"White Oak","n":"Otis","f":"Charney0187.CR3","q":"","b":"Harbor_White-Oak_Otis_0187"},{"c":"Harbor","w":"White Oak","n":"Crystal","f":"Charney0190.CR3","q":"","b":"Harbor_White-Oak_Crystal_0190"},{"c":"Harbor","w":"White Oak","n":"Juliet","f":"Charney0191.CR3","q":"","b":"Harbor_White-Oak_Juliet_0191"},{"c":"Harbor","w":"White Oak","n":"Onota","f":"Charney0193.CR3","q":"","b":"Harbor_White-Oak_Onota_0193"},{"c":"Harbor","w":"White Oak","n":"Windward Brown","f":"Charney0195.CR3","q":"","b":"Harbor_White-Oak_Windward-Brown_0195"},{"c":"Harbor","w":"White Oak","n":"Helmsman","f":"Charney0197.CR3","q":"","b":"Harbor_White-Oak_Helmsman_0197"},{"c":"Harbor","w":"White Oak","n":"Nautical Brown","f":"Charney0198.CR3","q":"","b":"Harbor_White-Oak_Nautical-Brown_0198"},{"c":"Harbor","w":"White Oak","n":"Nautical Brown","f":"Charney0199.CR3","q":"","b":"Harbor_White-Oak_Nautical-Brown_0199"},{"c":"Harbor","w":"White Oak","n":"Stallion","f":"Charney0200.CR3","q":"","b":"Harbor_White-Oak_Stallion_0200"},{"c":"Bay","w":"White Oak","n":"Rosebud","f":"Charney0201.CR3","q":"","b":"Bay_White-Oak_Rosebud_0201"},{"c":"Bay","w":"White Oak","n":"Monroe","f":"Charney0203.CR3","q":"","b":"Bay_White-Oak_Monroe_0203"},{"c":"Bay","w":"White Oak","n":"Cassett","f":"Charney0204.CR3","q":"","b":"Bay_White-Oak_Cassett_0204"},{"c":"Bay","w":"White Oak","n":"Shelby","f":"Charney0205.CR3","q":"","b":"Bay_White-Oak_Shelby_0205"},{"c":"Bay","w":"White Oak","n":"Wrightsville","f":"Charney0207.CR3","q":"","b":"Bay_White-Oak_Wrightsville_0207"},{"c":"Bay","w":"White Oak","n":"Samford","f":"Charney0208.CR3","q":"","b":"Bay_White-Oak_Samford_0208"},{"c":"Bay","w":"White Oak","n":"Eden","f":"Charney0209.CR3","q":"","b":"Bay_White-Oak_Eden_0209"},{"c":"Bay","w":"White Oak","n":"Carboro","f":"Charney0211.CR3","q":"","b":"Bay_White-Oak_Carboro_0211"},{"c":"Bay","w":"White Oak","n":"Murphy","f":"Charney0212.CR3","q":"","b":"Bay_White-Oak_Murphy_0212"},{"c":"Bay","w":"White Oak","n":"Maggie Valley","f":"Charney0213.CR3","q":"","b":"Bay_White-Oak_Maggie-Valley_0213"},{"c":"Bay","w":"White Oak","n":"Kingsboro","f":"Charney0214.CR3","q":"","b":"Bay_White-Oak_Kingsboro_0214"},{"c":"Bay","w":"White Oak","n":"Highlands","f":"Charney0216.CR3","q":"","b":"Bay_White-Oak_Highlands_0216"},{"c":"Bay","w":"White Oak","n":"Boone","f":"Charney0217.CR3","q":"","b":"Bay_White-Oak_Boone_0217"},{"c":"Bay","w":"White Oak","n":"Palmer","f":"Charney0218.CR3","q":"","b":"Bay_White-Oak_Palmer_0218"},{"c":"Bay","w":"White Oak","n":"Palmer","f":"Charney0219.CR3","q":"","b":"Bay_White-Oak_Palmer_0219"},{"c":"Bay","w":"White Oak","n":"Faison","f":"Charney0223.CR3","q":"","b":"Bay_White-Oak_Faison_0223"},{"c":"Bay","w":"White Oak","n":"Waynesville","f":"Charney0225.CR3","q":"","b":"Bay_White-Oak_Waynesville_0225"},{"c":"Acadia","w":"White Oak","n":"Grandeur","f":"Charney0226.CR3","q":"","b":"Acadia_White-Oak_Grandeur_0226"},{"c":"Acadia","w":"White Oak","n":"Grandeur","f":"Charney0227.CR3","q":"","b":"Acadia_White-Oak_Grandeur_0227"},{"c":"Acadia","w":"White Oak","n":"Seymour","f":"Charney0229.CR3","q":"","b":"Acadia_White-Oak_Seymour_0229"},{"c":"Acadia","w":"White Oak","n":"Serenity","f":"Charney0230.CR3","q":"","b":"Acadia_White-Oak_Serenity_0230"},{"c":"Acadia","w":"White Oak","n":"Harvey","f":"Charney0232.CR3","q":"","b":"Acadia_White-Oak_Harvey_0232"},{"c":"Acadia","w":"White Oak","n":"Obsession","f":"Charney0233.CR3","q":"","b":"Acadia_White-Oak_Obsession_0233"},{"c":"Acadia","w":"White Oak","n":"Brookstone","f":"Charney0236.CR3","q":"","b":"Acadia_White-Oak_Brookstone_0236"},{"c":"Acadia","w":"White Oak","n":"Smoked Oil","f":"Charney0237.CR3","q":"","b":"Acadia_White-Oak_Smoked-Oil_0237"},{"c":"Acadia","w":"White Oak","n":"Encore","f":"Charney0240.CR3","q":"","b":"Acadia_White-Oak_Encore_0240"},{"c":"Acadia","w":"White Oak","n":"Carmi","f":"Charney0241.CR3","q":"","b":"Acadia_White-Oak_Carmi_0241"},{"c":"Acadia","w":"White Oak","n":"Pepper","f":"Charney0244.CR3","q":"","b":"Acadia_White-Oak_Pepper_0244"},{"c":"Acadia","w":"White Oak","n":"Liberation","f":"Charney0245.CR3","q":"","b":"Acadia_White-Oak_Liberation_0245"},{"c":"Acadia","w":"White Oak","n":"Parkman","f":"Charney0246.CR3","q":"","b":"Acadia_White-Oak_Parkman_0246"},{"c":"Acadia","w":"White Oak","n":"Naples","f":"Charney0247.CR3","q":"","b":"Acadia_White-Oak_Naples_0247"},{"c":"Acadia","w":"White Oak","n":"Bernard","f":"Charney0250.CR3","q":"","b":"Acadia_White-Oak_Bernard_0250"},{"c":"Acadia","w":"White Oak","n":"Unity","f":"Charney0251.CR3","q":"","b":"Acadia_White-Oak_Unity_0251"},{"c":"Acadia","w":"White Oak","n":"Glam","f":"Charney0252.CR3","q":"","b":"Acadia_White-Oak_Glam_0252"},{"c":"Acadia","w":"White Oak","n":"Stabian","f":"Charney0254.CR3","q":"","b":"Acadia_White-Oak_Stabian_0254"},{"c":"Acadia","w":"White Oak","n":"Parkman","f":"Charney0255.CR3","q":"","b":"Acadia_White-Oak_Parkman_0255"},{"c":"Coastal","w":"Red Oak","n":"Twinsberg","f":"Charney0257.CR3","q":"ambiguous label","b":"Coastal_Red-Oak_Twinsberg_0257"},{"c":"Coastal","w":"Red Oak","n":"Seaburn","f":"Charney0260.CR3","q":"","b":"Coastal_Red-Oak_Seaburn_0260"},{"c":"Coastal","w":"Red Oak","n":"Seaburn","f":"Charney0262.CR3","q":"","b":"Coastal_Red-Oak_Seaburn_0262"},{"c":"Coastal","w":"Red Oak","n":"Radcliffe","f":"Charney0268.CR3","q":"","b":"Coastal_Red-Oak_Radcliffe_0268"},{"c":"Coastal","w":"Red Oak","n":"Poppy","f":"Charney0270.CR3","q":"","b":"Coastal_Red-Oak_Poppy_0270"},{"c":"Coastal","w":"Red Oak","n":"Gold Coast","f":"Charney0271.CR3","q":"","b":"Coastal_Red-Oak_Gold-Coast_0271"},{"c":"Coastal","w":"Red Oak","n":"Dune Light","f":"Charney0273.CR3","q":"","b":"Coastal_Red-Oak_Dune-Light_0273"},{"c":"Coastal","w":"Red Oak","n":"Dune Light","f":"Charney0274.CR3","q":"","b":"Coastal_Red-Oak_Dune-Light_0274"},{"c":"Coastal","w":"Red Oak","n":"Sandy Dock","f":"Charney0276.CR3","q":"","b":"Coastal_Red-Oak_Sandy-Dock_0276"},{"c":"Coastal","w":"Red Oak","n":"Elinor","f":"Charney0278.CR3","q":"","b":"Coastal_Red-Oak_Elinor_0278"},{"c":"Coastal","w":"Red Oak","n":"East Bay","f":"Charney0279.CR3","q":"","b":"Coastal_Red-Oak_East-Bay_0279"},{"c":"Coastal","w":"Red Oak","n":"Alta Park","f":"Charney0280.CR3","q":"","b":"Coastal_Red-Oak_Alta-Park_0280"},{"c":"Coastal","w":"Red Oak","n":"Java","f":"Charney0282.CR3","q":"","b":"Coastal_Red-Oak_Java_0282"},{"c":"Coastal","w":"Red Oak","n":"Java","f":"Charney0283.CR3","q":"","b":"Coastal_Red-Oak_Java_0283"},{"c":"Coastal","w":"Red Oak","n":"Corden","f":"Charney0287.CR3","q":"","b":"Coastal_Red-Oak_Corden_0287"},{"c":"Coastal","w":"Red Oak","n":"Bardow","f":"Charney0290.CR3","q":"","b":"Coastal_Red-Oak_Bardow_0290"},{"c":"Coastal","w":"Red Oak","n":"Nuro","f":"Charney0292.CR3","q":"","b":"Coastal_Red-Oak_Nuro_0292"},{"c":"Coastal","w":"Red Oak","n":"Nuro","f":"Charney0293.CR3","q":"","b":"Coastal_Red-Oak_Nuro_0293"},{"c":"Coastal","w":"Red Oak","n":"Seaburn","f":"Charney0296.CR3","q":"","b":"Coastal_Red-Oak_Seaburn_0296"},{"c":"Coastal","w":"Red Oak","n":"Seaburn","f":"Charney0297.CR3","q":"","b":"Coastal_Red-Oak_Seaburn_0297"},{"c":"Coastal","w":"Red Oak","n":"Redmond","f":"Charney0301.CR3","q":"","b":"Coastal_Red-Oak_Redmond_0301"},{"c":"Coastal","w":"Red Oak","n":"Rosewick","f":"Charney0307.CR3","q":"","b":"Coastal_Red-Oak_Rosewick_0307"},{"c":"Coastal","w":"Red Oak","n":"Nugget","f":"Charney0308.CR3","q":"","b":"Coastal_Red-Oak_Nugget_0308"},{"c":"Coastal","w":"Red Oak","n":"Wayland","f":"Charney0312.CR3","q":"","b":"Coastal_Red-Oak_Wayland_0312"},{"c":"Coastal","w":"Red Oak","n":"Sablewood","f":"Charney0313.CR3","q":"","b":"Coastal_Red-Oak_Sablewood_0313"},{"c":"Coastal","w":"Red Oak","n":"Port Pine","f":"Charney0314.CR3","q":"","b":"Coastal_Red-Oak_Port-Pine_0314"},{"c":"Coastal","w":"Red Oak","n":"Oxford Enhanced","f":"Charney0316.CR3","q":"","b":"Coastal_Red-Oak_Oxford-Enhanced_0316"},{"c":"Coastal","w":"Red Oak","n":"Franco","f":"Charney0317.CR3","q":"","b":"Coastal_Red-Oak_Franco_0317"},{"c":"Coastal","w":"Red Oak","n":"Nellie","f":"Charney0318.CR3","q":"","b":"Coastal_Red-Oak_Nellie_0318"},{"c":"Coastal","w":"Red Oak","n":"Fausto","f":"Charney0319.CR3","q":"","b":"Coastal_Red-Oak_Fausto_0319"},{"c":"Coastal","w":"Red Oak","n":"Beauceron","f":"Charney0320.CR3","q":"ambiguous label","b":"Coastal_Red-Oak_Beauceron_0320"},{"c":"Coastal","w":"Red Oak","n":"Beauceron","f":"Charney0321.CR3","q":"ambiguous label","b":"Coastal_Red-Oak_Beauceron_0321"},{"c":"Coastal","w":"Red Oak","n":"Bichon","f":"Charney0322.CR3","q":"","b":"Coastal_Red-Oak_Bichon_0322"},{"c":"Coastal","w":"Red Oak","n":"Bichon","f":"Charney0323.CR3","q":"","b":"Coastal_Red-Oak_Bichon_0323"},{"c":"Coastal","w":"Red Oak","n":"Cirneco","f":"Charney0324.CR3","q":"","b":"Coastal_Red-Oak_Cirneco_0324"},{"c":"Coastal","w":"Red Oak","n":"Gold Coast","f":"Charney0327.CR3","q":"","b":"Coastal_Red-Oak_Gold-Coast_0327"},{"c":"Coastal","w":"Red Oak","n":"Retriever","f":"Charney0328.CR3","q":"","b":"Coastal_Red-Oak_Retriever_0328"},{"c":"Coastal","w":"Red Oak","n":"Setter","f":"Charney0329.CR3","q":"","b":"Coastal_Red-Oak_Setter_0329"},{"c":"Coastal","w":"Red Oak","n":"Cherry Hill","f":"Charney0330.CR3","q":"","b":"Coastal_Red-Oak_Cherry-Hill_0330"},{"c":"Coastal","w":"Red Oak","n":"Eaglewood","f":"Charney0331.CR3","q":"","b":"Coastal_Red-Oak_Eaglewood_0331"},{"c":"Coastal","w":"Red Oak","n":"Seri","f":"Charney0332.CR3","q":"","b":"Coastal_Red-Oak_Seri_0332"},{"c":"Coastal","w":"Red Oak","n":"Seaburn","f":"Charney0333.CR3","q":"","b":"Coastal_Red-Oak_Seaburn_0333"},{"c":"Coastal","w":"Red Oak","n":"Province","f":"Charney0334.CR3","q":"","b":"Coastal_Red-Oak_Province_0334"},{"c":"Coastal","w":"Red Oak","n":"Gray Horse","f":"Charney0335.CR3","q":"","b":"Coastal_Red-Oak_Gray-Horse_0335"},{"c":"Coastal","w":"Red Oak","n":"Broderick","f":"Charney0337.CR3","q":"","b":"Coastal_Red-Oak_Broderick_0337"},{"c":"Coastal","w":"Red Oak","n":"Danika","f":"Charney0338.CR3","q":"","b":"Coastal_Red-Oak_Danika_0338"},{"c":"Coastal","w":"Red Oak","n":"Golly","f":"Charney0339.CR3","q":"","b":"Coastal_Red-Oak_Golly_0339"},{"c":"Coastal","w":"Red Oak","n":"Wells","f":"Charney0340.CR3","q":"","b":"Coastal_Red-Oak_Wells_0340"},{"c":"Coastal","w":"Red Oak","n":"Airedale","f":"Charney0341.CR3","q":"","b":"Coastal_Red-Oak_Airedale_0341"},{"c":"Coastal","w":"Red Oak","n":"Meadowbrook","f":"Charney0342.CR3","q":"","b":"Coastal_Red-Oak_Meadowbrook_0342"},{"c":"Coastal","w":"Red Oak","n":"Harrier","f":"Charney0344.CR3","q":"","b":"Coastal_Red-Oak_Harrier_0344"},{"c":"Coastal","w":"Red Oak","n":"Rangeley","f":"Charney0346.CR3","q":"","b":"Coastal_Red-Oak_Rangeley_0346"},{"c":"Coastal","w":"Red Oak","n":"Marigold","f":"Charney0347.CR3","q":"","b":"Coastal_Red-Oak_Marigold_0347"},{"c":"Coastal","w":"Red Oak","n":"Marigold","f":"Charney0348.CR3","q":"","b":"Coastal_Red-Oak_Marigold_0348"},{"c":"Coastal","w":"Red Oak","n":"Turtle Bay","f":"Charney0349.CR3","q":"","b":"Coastal_Red-Oak_Turtle-Bay_0349"},{"c":"Coastal","w":"Red Oak","n":"Ester","f":"Charney0351.CR3","q":"","b":"Coastal_Red-Oak_Ester_0351"},{"c":"Coastal","w":"Red Oak","n":"Danika","f":"Charney0352.CR3","q":"","b":"Coastal_Red-Oak_Danika_0352"},{"c":"Coastal","w":"Red Oak","n":"Grey Fox","f":"Charney0353.CR3","q":"","b":"Coastal_Red-Oak_Grey-Fox_0353"},{"c":"Coastal","w":"Red Oak","n":"Claire","f":"Charney0356.CR3","q":"","b":"Coastal_Red-Oak_Claire_0356"},{"c":"Coastal","w":"Red Oak","n":"Springer","f":"Charney0357.CR3","q":"","b":"Coastal_Red-Oak_Springer_0357"},{"c":"Coastal","w":"Red Oak","n":"Helena","f":"Charney0359.CR3","q":"","b":"Coastal_Red-Oak_Helena_0359"},{"c":"Coastal","w":"Red Oak","n":"Twinsburg","f":"Charney0360.CR3","q":"","b":"Coastal_Red-Oak_Twinsburg_0360"},{"c":"Coastal","w":"Red Oak","n":"Gray Horse","f":"Charney0362.CR3","q":"","b":"Coastal_Red-Oak_Gray-Horse_0362"},{"c":"Coastal","w":"Red Oak","n":"Dalton","f":"Charney0363.CR3","q":"","b":"Coastal_Red-Oak_Dalton_0363"},{"c":"Coastal","w":"Red Oak","n":"Dalton","f":"Charney0364.CR3","q":"","b":"Coastal_Red-Oak_Dalton_0364"},{"c":"Coastal","w":"Red Oak","n":"Vizsla","f":"Charney0365.CR3","q":"","b":"Coastal_Red-Oak_Vizsla_0365"},{"c":"Coastal","w":"Red Oak","n":"Melanie","f":"Charney0367.CR3","q":"","b":"Coastal_Red-Oak_Melanie_0367"},{"c":"Coastal","w":"Red Oak","n":"Sprigg","f":"Charney0368.CR3","q":"","b":"Coastal_Red-Oak_Sprigg_0368"},{"c":"Coastal","w":"Red Oak","n":"Tenley","f":"Charney0369.CR3","q":"","b":"Coastal_Red-Oak_Tenley_0369"},{"c":"Coastal","w":"Red Oak","n":"Oxford","f":"Charney0371.CR3","q":"","b":"Coastal_Red-Oak_Oxford_0371"},{"c":"Coastal","w":"Red Oak","n":"Spinone","f":"Charney0375.CR3","q":"","b":"Coastal_Red-Oak_Spinone_0375"},{"c":"Coastal","w":"Red Oak","n":"Bardow","f":"Charney0376.CR3","q":"","b":"Coastal_Red-Oak_Bardow_0376"},{"c":"Coastal","w":"Red Oak","n":"Bardow","f":"Charney0377.CR3","q":"","b":"Coastal_Red-Oak_Bardow_0377"},{"c":"Coastal","w":"Red Oak","n":"Naturelle","f":"Charney0379.CR3","q":"","b":"Coastal_Red-Oak_Naturelle_0379"},{"c":"Coastal","w":"Red Oak","n":"Anthology Brown","f":"Charney0380.CR3","q":"","b":"Coastal_Red-Oak_Anthology-Brown_0380"},{"c":"Coastal","w":"Red Oak","n":"Anthology Brown","f":"Charney0381.CR3","q":"","b":"Coastal_Red-Oak_Anthology-Brown_0381"},{"c":"Coastal","w":"Red Oak","n":"Province","f":"Charney0382.CR3","q":"","b":"Coastal_Red-Oak_Province_0382"},{"c":"Coastal","w":"Red Oak","n":"Eaglewood","f":"Charney0383.CR3","q":"","b":"Coastal_Red-Oak_Eaglewood_0383"},{"c":"Bay","w":"Red Oak","n":"Kingsboro","f":"Charney0384.CR3","q":"","b":"Bay_Red-Oak_Kingsboro_0384"},{"c":"Bay","w":"Red Oak","n":"Kingsboro","f":"Charney0385.CR3","q":"","b":"Bay_Red-Oak_Kingsboro_0385"},{"c":"Bay","w":"Red Oak","n":"Boone","f":"Charney0388.CR3","q":"","b":"Bay_Red-Oak_Boone_0388"},{"c":"Bay","w":"Red Oak","n":"Wrightsville","f":"Charney0389.CR3","q":"","b":"Bay_Red-Oak_Wrightsville_0389"},{"c":"Bay","w":"Red Oak","n":"Carboro","f":"Charney0391.CR3","q":"","b":"Bay_Red-Oak_Carboro_0391"},{"c":"Bay","w":"Red Oak","n":"Maggie Valley","f":"Charney0393.CR3","q":"","b":"Bay_Red-Oak_Maggie-Valley_0393"},{"c":"Bay","w":"Red Oak","n":"Waynesville","f":"Charney0394.CR3","q":"","b":"Bay_Red-Oak_Waynesville_0394"},{"c":"Bay","w":"Red Oak","n":"Faison","f":"Charney0395.CR3","q":"","b":"Bay_Red-Oak_Faison_0395"},{"c":"Bay","w":"Red Oak","n":"Murphy","f":"Charney0396.CR3","q":"","b":"Bay_Red-Oak_Murphy_0396"},{"c":"Bay","w":"Red Oak","n":"Murphy","f":"Charney0397.CR3","q":"","b":"Bay_Red-Oak_Murphy_0397"},{"c":"Bay","w":"Red Oak","n":"Eden","f":"Charney0399.CR3","q":"","b":"Bay_Red-Oak_Eden_0399"},{"c":"Bay","w":"Red Oak","n":"Highlands","f":"Charney0400.CR3","q":"","b":"Bay_Red-Oak_Highlands_0400"},{"c":"Bay","w":"Red Oak","n":"Cassett","f":"Charney0402.CR3","q":"","b":"Bay_Red-Oak_Cassett_0402"},{"c":"Bay","w":"Red Oak","n":"Concord","f":"Charney0403.CR3","q":"","b":"Bay_Red-Oak_Concord_0403"},{"c":"Bay","w":"Red Oak","n":"Samford","f":"Charney0405.CR3","q":"","b":"Bay_Red-Oak_Samford_0405"},{"c":"Bay","w":"Red Oak","n":"Concord","f":"Charney0407.CR3","q":"","b":"Bay_Red-Oak_Concord_0407"},{"c":"Bay","w":"Red Oak","n":"Roseboro","f":"Charney0408.CR3","q":"","b":"Bay_Red-Oak_Roseboro_0408"},{"c":"Bay","w":"Red Oak","n":"Roseboro","f":"Charney0409.CR3","q":"","b":"Bay_Red-Oak_Roseboro_0409"},{"c":"Bay","w":"Red Oak","n":"Roseboro","f":"Charney0411.CR3","q":"","b":"Bay_Red-Oak_Roseboro_0411"},{"c":"Bay","w":"Red Oak","n":"Palmer","f":"Charney0413.CR3","q":"","b":"Bay_Red-Oak_Palmer_0413"},{"c":"Bay","w":"Red Oak","n":"Shelby","f":"Charney0414.CR3","q":"","b":"Bay_Red-Oak_Shelby_0414"},{"c":"Bay","w":"Red Oak","n":"Shelby","f":"Charney0415.CR3","q":"","b":"Bay_Red-Oak_Shelby_0415"},{"c":"","w":"Birch","n":"Chatham","f":"Charney0417.CR3","q":"needs collection","b":"Birch_Chatham_0417"},{"c":"","w":"Birch","n":"Chatham","f":"Charney0418.CR3","q":"needs collection","b":"Birch_Chatham_0418"},{"c":"","w":"Brazilian Cherry","n":"Jasper","f":"Charney0421.CR3","q":"needs collection","b":"Brazilian-Cherry_Jasper_0421"},{"c":"","w":"Brazilian Cherry","n":"Jasper","f":"Charney0422.CR3","q":"needs collection","b":"Brazilian-Cherry_Jasper_0422"},{"c":"","w":"Brazilian Cherry","n":"Danville","f":"Charney0423.CR3","q":"needs collection","b":"Brazilian-Cherry_Danville_0423"},{"c":"","w":"Brazilian Cherry","n":"Danville","f":"Charney0424.CR3","q":"needs collection","b":"Brazilian-Cherry_Danville_0424"},{"c":"","w":"Brazilian Cherry","n":"Heeva","f":"Charney0425.CR3","q":"needs collection","b":"Brazilian-Cherry_Heeva_0425"},{"c":"","w":"Brazilian Cherry","n":"Mead Valley","f":"Charney0426.CR3","q":"needs collection","b":"Brazilian-Cherry_Mead-Valley_0426"},{"c":"","w":"Brazilian Cherry","n":"Mead Valley","f":"Charney0427.CR3","q":"needs collection","b":"Brazilian-Cherry_Mead-Valley_0427"},{"c":"","w":"American Cherry","n":"Sandbar","f":"Charney0430.CR3","q":"needs collection","b":"American-Cherry_Sandbar_0430"},{"c":"","w":"American Cherry","n":"Dune","f":"Charney0432.CR3","q":"needs collection","b":"American-Cherry_Dune_0432"},{"c":"","w":"American Cherry","n":"Highpoint","f":"Charney0433.CR3","q":"needs collection","b":"American-Cherry_Highpoint_0433"},{"c":"","w":"American Cherry","n":"Cobblestone Mist","f":"Charney0434.CR3","q":"needs collection","b":"American-Cherry_Cobblestone-Mist_0434"},{"c":"","w":"American Cherry","n":"Highpoint","f":"Charney0437.CR3","q":"needs collection","b":"American-Cherry_Highpoint_0437"},{"c":"Coastal","w":"Maple","n":"Bristol","f":"Charney0439.CR3","q":"","b":"Coastal_Maple_Bristol_0439"},{"c":"Coastal","w":"Maple","n":"Dune Light","f":"Charney0443.CR3","q":"","b":"Coastal_Maple_Dune-Light_0443"},{"c":"Coastal","w":"Maple","n":"Bristol","f":"Charney0444.CR3","q":"","b":"Coastal_Maple_Bristol_0444"},{"c":"Coastal","w":"Maple","n":"Sandbar","f":"Charney0445.CR3","q":"","b":"Coastal_Maple_Sandbar_0445"},{"c":"Coastal","w":"Maple","n":"Oxford","f":"Charney0446.CR3","q":"","b":"Coastal_Maple_Oxford_0446"},{"c":"Coastal","w":"Maple","n":"Oxford Enhanced","f":"Charney0448.CR3","q":"","b":"Coastal_Maple_Oxford-Enhanced_0448"},{"c":"","w":"Yellow Birch","n":"Cobblestone Mist","f":"Charney0450.CR3","q":"ambiguous label","b":"Yellow-Birch_Cobblestone-Mist_0450"},{"c":"Mist","w":"Yellow Birch","n":"Dune","f":"Charney0452.CR3","q":"ambiguous label","b":"Mist_Yellow-Birch_Dune_0452"},{"c":"Coastal","w":"Maple","n":"Dune","f":"Charney0453.CR3","q":"","b":"Coastal_Maple_Dune_0453"},{"c":"Mist","w":"Maple","n":"","f":"Charney0454.CR3","q":"ambiguous label","b":"Mist_Maple_0454"},{"c":"Bay","w":"Red Oak","n":"Tenley","f":"Charney0456.CR3","q":"","b":"Bay_Red-Oak_Tenley_0456"},{"c":"Harbor","w":"Red Oak","n":"Twine","f":"Charney0462.CR3","q":"","b":"Harbor_Red-Oak_Twine_0462"},{"c":"Harbor","w":"Red Oak","n":"Fontana","f":"Charney0463.CR3","q":"","b":"Harbor_Red-Oak_Fontana_0463"},{"c":"Harbor","w":"Red Oak","n":"Fontana","f":"Charney0464.CR3","q":"","b":"Harbor_Red-Oak_Fontana_0464"},{"c":"Harbor","w":"Red Oak","n":"Gaston","f":"Charney0466.CR3","q":"","b":"Harbor_Red-Oak_Gaston_0466"},{"c":"Harbor","w":"Red Oak","n":"Norman","f":"Charney0468.CR3","q":"","b":"Harbor_Red-Oak_Norman_0468"},{"c":"Harbor","w":"White Oak","n":"Broadmoor","f":"Charney0471.CR3","q":"","b":"Harbor_White-Oak_Broadmoor_0471"},{"c":"","w":"","n":"Cayuga","f":"Charney0493.CR3","q":"needs collection and species","b":"Cayuga_0493"},{"c":"","w":"","n":"Phelps","f":"Charney0496.CR3","q":"needs collection and species","b":"Phelps_0496"},{"c":"","w":"","n":"Phelps","f":"Charney0497.CR3","q":"needs collection and species","b":"Phelps_0497"},{"c":"","w":"","n":"Brady","f":"Charney0498.CR3","q":"needs collection and species","b":"Brady_0498"},{"c":"","w":"","n":"Brady","f":"Charney0499.CR3","q":"needs collection and species","b":"Brady_0499"},{"c":"","w":"","n":"Plott","f":"Charney0500.CR3","q":"needs collection and species","b":"Plott_0500"},{"c":"","w":"","n":"Basset","f":"Charney0501.CR3","q":"needs collection and species","b":"Basset_0501"},{"c":"","w":"","n":"Basset","f":"Charney0502.CR3","q":"needs collection and species","b":"Basset_0502"},{"c":"","w":"","n":"Norwich","f":"Charney0504.CR3","q":"needs collection and species","b":"Norwich_0504"},{"c":"","w":"","n":"Havanese","f":"Charney0506.CR3","q":"needs collection and species","b":"Havanese_0506"},{"c":"","w":"","n":"Lhasa","f":"Charney0509.CR3","q":"needs collection and species","b":"Lhasa_0509"},{"c":"","w":"","n":"Murray","f":"Charney0511.CR3","q":"needs collection and species","b":"Murray_0511"}];
+const grid = document.getElementById('grid');
+const countEl = document.getElementById('count');
+const lb = document.getElementById('lb');
+let fCol = null, fWood = null, fFlag = null, fQ = '';
+
+document.getElementById('hn').textContent = DATA.length;
+const pend = DATA.filter(d => d.q).length;
+document.getElementById('pending').textContent = pend
+  ? pend + ' records are still missing part of their label and are marked in orange. '
+    + 'Those need a collection name, a species, or both before the library is complete.'
+  : '';
+
+function tally(key){
+  const m = new Map();
+  for (const d of DATA) { const v = d[key] || 'Unlabeled'; m.set(v, (m.get(v)||0)+1); }
+  return [...m].sort((a,b) => b[1]-a[1]);
+}
+
+function chipRow(el, label, pairs, cls, get, set){
+  el.innerHTML = '';
+  const all = document.createElement('button');
+  all.className = 'chip'; all.type = 'button'; all.textContent = label;
+  all.setAttribute('aria-pressed', get() === null);
+  all.onclick = () => { set(null); render(); };
+  el.appendChild(all);
+  for (const [v, n] of pairs) {
+    const b = document.createElement('button');
+    b.className = 'chip' + (cls ? ' ' + cls : ''); b.type = 'button';
+    b.append(v);
+    const c = document.createElement('span'); c.className = 'ct'; c.textContent = n;
+    b.appendChild(c);
+    b.setAttribute('aria-pressed', get() === v);
+    b.onclick = () => { set(get() === v ? null : v); render(); };
+    el.appendChild(b);
+  }
+}
+
+function open(d, bits){
+  document.getElementById('lbimg').src = 'img/f/' + d.b + '.jpg';
+  document.getElementById('lbimg').alt = (d.n || 'Unnamed') + ' stain on ' + (d.w || 'wood');
+  document.getElementById('lbname').textContent = d.n || 'Not yet identified';
+  document.getElementById('lbsub').textContent = bits;
+  document.getElementById('lbflag').textContent = d.q || '';
+  document.getElementById('lbfile').textContent = d.f;
+  const a = document.getElementById('lbdl');
+  a.href = 'img/f/' + d.b + '.jpg'; a.setAttribute('download', d.b + '.jpg');
+  lb.showModal();
+}
+document.getElementById('lbclose').onclick = () => lb.close();
+
+function render(){
+  chipRow(document.getElementById('cols'),  'All collections', tally('c'), '', () => fCol,  v => fCol = v);
+  chipRow(document.getElementById('woods'), 'All species',     tally('w'), '', () => fWood, v => fWood = v);
+  const fm = new Map();
+  for (const d of DATA) if (d.q) fm.set(d.q, (fm.get(d.q)||0)+1);
+  chipRow(document.getElementById('flags'), 'All records',
+          [...fm].sort((a,b) => b[1]-a[1]), 'flagchip', () => fFlag, v => fFlag = v);
+
+  const q = fQ.trim().toLowerCase();
+  const hits = DATA.filter(d =>
+    (fCol  === null || (d.c || 'Unlabeled') === fCol) &&
+    (fWood === null || (d.w || 'Unlabeled') === fWood) &&
+    (fFlag === null || d.q === fFlag) &&
+    (!q || (d.n + ' ' + d.c + ' ' + d.w + ' ' + d.f).toLowerCase().includes(q)));
+
+  countEl.textContent = hits.length + (hits.length === 1 ? ' sample' : ' samples');
+  grid.innerHTML = '';
+  if (!hits.length) { grid.innerHTML = '<p class="empty">Nothing matches that.</p>'; return; }
+
+  const frag = document.createDocumentFragment();
+  for (const d of hits) {
+    const bits = [d.c, d.w].filter(Boolean).join(' · ') || 'Not yet identified';
+    const t = document.createElement('button');
+    t.className = 'tile'; t.type = 'button';
+    const ph = document.createElement('div'); ph.className = 'ph';
+    const im = document.createElement('img');
+    im.loading = 'lazy'; im.decoding = 'async';
+    im.width = 320; im.height = 320;
+    im.src = 'img/t/' + d.b + '.webp';
+    im.alt = (d.n || 'Unnamed') + ' stain sample';
+    ph.appendChild(im);
+    const me = document.createElement('div'); me.className = 'meta';
+    const nm = document.createElement('div'); nm.className = 'nm';
+    nm.textContent = d.n || 'Unnamed';
+    const s2 = document.createElement('div'); s2.className = 'sub2'; s2.textContent = bits;
+    me.append(nm, s2);
+    if (d.q) { const fl = document.createElement('span'); fl.className = 'flag';
+               fl.textContent = d.q; me.appendChild(fl); }
+    t.append(ph, me);
+    t.onclick = () => open(d, bits);
+    frag.appendChild(t);
+  }
+  grid.appendChild(frag);
+}
+
+document.getElementById('q').addEventListener('input', e => { fQ = e.target.value; render(); });
+render();
+</script>
